@@ -1,0 +1,67 @@
+3/5/2022, 9:44:35 PM | ERROR | All Addresses :  | data "Error MSG : Projection cannot have a mix of inclusion and exclusion. | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 9:45:29 PM | ERROR | All Addresses :  | data "Error MSG : Projection cannot have a mix of inclusion and exclusion. | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 9:46:23 PM | ERROR | All Addresses :  | data "Error MSG : Projection cannot have a mix of inclusion and exclusion. | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 9:46:26 PM | ERROR | All Addresses :  | data "Error MSG : Projection cannot have a mix of inclusion and exclusion. | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 9:46:37 PM | ERROR | All Addresses :  | data "Error MSG : Projection cannot have a mix of inclusion and exclusion. | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 9:48:31 PM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 9:49:30 PM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 9:49:43 PM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 11:22:35 PM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 11:23:13 PM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 11:23:24 PM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 11:23:26 PM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 11:23:46 PM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 11:23:48 PM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 11:25:17 PM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 11:25:25 PM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 11:42:30 PM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 11:45:27 PM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 11:51:31 PM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/5/2022, 11:58:15 PM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:00:35 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:00:36 AM | INFO | Delete Address :  | data "yas@gmail.com Delete Address  | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:01:55 AM | INFO | Delete Address :  | data "yas@gmail.com Delete Address  | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:03:39 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:05:52 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:39:50 AM | ERROR | Add Address :  | data "{ name: 'Home',\n  city: 'Moudamiah ',\n  street: 'Alnabil Street',\n  locationDetails: 'Alkornish Street-20 Block',\n  User: [ new ObjectId(\"62232da47bcf1efcd563f193\") ],\n  CreatedAt: 2022-03-05T22:39:50.000Z,\n  _id: new ObjectId(\"6223e6b62b6da0a7aaab1e36\") } New Added | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:41:03 AM | ERROR | Add Address :  | data "{ name: 'Home',\n  city: 'Moudamiah ',\n  street: 'Alnabil Street',\n  locationDetails: 'Alkornish Street-20 Block',\n  User: [ new ObjectId(\"62232da47bcf1efcd563f193\") ],\n  CreatedAt: 2022-03-05T22:41:03.000Z,\n  _id: new ObjectId(\"6223e6ff6ad8148c72ddc119\") } New Added | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:41:03 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:41:07 AM | INFO | Delete Address :  | data "yas@gmail.com Delete Address  | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:41:07 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:41:10 AM | INFO | Delete Address :  | data "yas@gmail.com Delete Address  | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:41:10 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:41:20 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:45:29 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:45:37 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:46:00 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:46:19 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:49:34 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:49:52 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:49:58 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:57:27 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:57:32 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:57:34 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:58:32 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:58:46 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 12:59:49 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 1:18:33 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 1:18:55 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 1:19:24 AM | ERROR | Add Address :  | data "{ name: 'Home',\n  city: 'Mazzeh',\n  street: 'Al-shikh Saad',\n  locationDetails: 'Old Mazzeg',\n  User: [ new ObjectId(\"62232cf069cb7fcddc57d9fa\") ],\n  CreatedAt: 2022-03-05T23:19:24.000Z,\n  _id: new ObjectId(\"6223effcf6240ddd2de2faf8\") } New Added | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 1:19:24 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 1:19:42 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 1:19:49 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 1:20:01 AM | INFO | Delete Address :  | data "admin@admin.com Delete Address  | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 1:20:01 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 1:21:15 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 1:42:16 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 1:46:07 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 1:46:44 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 3:18:28 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 3:20:03 AM | ERROR | Add Address :  | data "{ name: 'Home',\n  city: 'Mazzeh',\n  street: 'askdk',\n  locationDetails: 'kaflkaj',\n  User: [ new ObjectId(\"62232da47bcf1efcd563f193\") ],\n  CreatedAt: 2022-03-06T01:20:03.000Z,\n  _id: new ObjectId(\"62240c4373dce9f8e5dd6222\") } New Added | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 3:20:03 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 3:20:49 AM | ERROR | Add Address :  | data "{ name: 'mazz',\n  city: 'damas',\n  street: 'akjdka',\n  locationDetails: ',knasjdnkjn',\n  User: [ new ObjectId(\"62232da47bcf1efcd563f193\") ],\n  CreatedAt: 2022-03-06T01:20:49.000Z,\n  _id: new ObjectId(\"62240c7173dce9f8e5dd622e\") } New Added | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 3:20:49 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 3:20:54 AM | INFO | Delete Address :  | data "yas@gmail.com Delete Address  | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 3:20:54 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 3:34:25 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 3:35:03 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 

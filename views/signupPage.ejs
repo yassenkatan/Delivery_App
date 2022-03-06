@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %> 
+<body>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h5 class="text-white h4">Delivery App</h5>
+          <a class="text-white h6" href="/">Home</a>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      <h2>Signup</h2><br>
+    <div class="container mx-auto">
+        <form action="/API/auth/signup" method="POST" enctype="multipart/form-data" class="col g-10">
+            <div class="col">
+                <label for="validationDefault01" class="col-sm-2 col-form-label">FullName : </label>
+                <input type="text" 
+                    name="fullname" value="" class="form-control" id="validationDefault01" required><br></div>
+                 <div class="col"><label for="validationDefault01" class="col-sm-2 col-form-label">Email : </label>
+                <input type="email" id="validationDefault01" 
+                    name="email" value="" class="form-control" required><br></div>
+                <div class="col"><label for="validationDefault01" class="col-sm-2 col-form-label">Password : </label>
+                <input type="password" id="validationDefault01" 
+                    name="password" value="" required class="form-control"><br></div>
+                <div class="col"> <label for="validationDefault01" class="col-sm-2 col-form-label">Password Confirm : </label>
+                <input type="password" id="validationDefault01"
+                    name="passwordConfirm" value="" required class="form-control"><br></div>
+                   
+            <div>
+                <button type="submit" class="btn btn-primary mb-3">SignUp</button>
+            </div>
+        </form>
+    </div>
+</body>
+<%- include('partials/footer') %> 
+</html>

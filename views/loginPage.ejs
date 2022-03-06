@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %> 
+<body>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h5 class="text-white h4">Delivery App</h5>
+          <a class="text-white h6" href="/">Home</a>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    <h2>Login</h2><br>
+    <div class="container ">
+        <form action="/API/auth/login" method="post" class="col g-10">
+            <div class="col"><label for="validationDefault01" class="col-sm-2 col-form-label">Email : </label>
+        <input type="email" class="form-control"id="validationDefault01"
+            name="email" value="" required><br></div>
+            <div class="col"><label for="validationDefault01" class="col-sm-2 col-form-label">Password : </label>
+        <input type="password" id="validationDefault01" name="password" class="form-control" required><br></div>
+        <input type="submit" value="Login" class="btn btn-primary mb-3">
+        </form>    
+    </div>
+</body>
+<%- include('partials/footer') %> 
+</html>

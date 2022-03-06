@@ -7,45 +7,47 @@ const User=require('../models/user.model');
 const Audit_Action=require('../Audit/auditAction');
 const Audit_Controller=require('../Audit/audit.controller');
 const Logger=require('../loggers/logger.controller');
-const user = require('../models/user.model');
 const logger=new Logger('user');
 
 //Signup
 const signup=async (req,res)=>{
     try {
-        let fullname=req.body.fullname;
-        let email=req.body.email;
-        let password=req.body.password;
-        let passwordConfirm=req.body.passwordConfirm;
-        let CreatedAt=util.DateNow();
-        
-        //Encrypt Password
-        const salt=12;
-        let passwordEncrypted=await bcrypt.hash(password,salt);
-        let passwordConfirmEncrypted=await bcrypt.hash(passwordConfirm,salt);
 
-        //New User
         let user=await new User({
-            fullname:fullname,
-            email:email.toLowerCase(),
-            password:passwordEncrypted,
-            passwordConfirm:passwordConfirmEncrypted,
-            CreatedAt:CreatedAt
+            fullname:req.body.fullname,
+            email:req.body.email,
+            password:req.body.password,
+            passwordConfirm:req.body.passwordConfirm
         });
-
+        
         //Check if User exist
-        let userExist=await User.findOne({email:email});
-        if(userExist){
+        let userExist=await User.find({email:user.email});
+        if(userExist!=null){
             logger.error('Signup : ',`User is exist | IP : ${req.socket.remoteAddress}`);
             alert('User Exist , Please Login ..')
-            res.render('loginPage');
+            res.render('loginPage',{title:'Login'});
         }
         else{
             //Check password is same confirm password
-            if(password==passwordConfirm){
-                const token=(await util.GenerateToken(user._id)).toString();
-                user.token=token;
-                user.save();
+            if(user.password==user.passwordConfirm){
+
+                //Encrypt Password
+                const salt= bcrypt.getSalt(10,function(){})
+                let passwordEncrypted=await bcrypt.hash(user.password,salt);
+                let passwordConfirmEncrypted=await bcrypt.hash(user.passwordConfirm,salt);
+
+                //New User
+                let new_user=await new User({
+                    fullname:user.fullname,
+                    email:user.email.toLowerCase(),
+                    password:passwordEncrypted,
+                    passwordConfirm:passwordConfirmEncrypted,
+                    CreatedAt:util.DateNow()
+                });
+
+                const token=(await util.GenerateToken(new_user._id)).toString();
+                new_user.token=token;
+                new_user.save();
                 Audit_Controller.prepareAudit(Audit_Action.auditAction.SIGNUP,fullname,200,null,email,req.socket.remoteAddress,util.DateNow());
                 logger.info('Signup : ',`${email} New User | IP: ${req.socket.remoteAddress}`)
                 alert(`Welcome ${user.fullname}, Please Login ...`)
@@ -170,6 +172,7 @@ const auth=async(req,res,next)=>{
     {
         alert("Access Rejected ...")
         logger.error('Authentication : ',`Access Rejected | IP : ${req.socket.remoteAddress}`);
+        Audit_Controller.prepareAudit(Audit_Action.auditAction.AUTHENTICATION,null,401,'Access Rejected',null,req.socket.remoteAddress,util.DateNow());
         
     }
     try {
@@ -180,10 +183,12 @@ const auth=async(req,res,next)=>{
         }
         else{
             alert("You Don`t Have Permession ...")
+            Audit_Controller.prepareAudit(Audit_Action.auditAction.AUTHENTICATION,null,401,'You Don`t Have Permession',Token_ID,req.socket.remoteAddress,util.DateNow());
             logger.error('Authentication : ',`You Don't Have Permession | IP : ${req.socket.remoteAddress}`);
         }
     } catch (err) {
         logger.error('Authentication : ',`Error MSG : ${err.message} | IP : ${req.socket.remoteAddress}`);
+        Audit_Controller.prepareAudit(Audit_Action.auditAction.AUTHENTICATION,null,401,err.message,null,req.socket.remoteAddress,util.DateNow());
         res.status(404).send(`Err MSG : ${err.message}`);
         
     }

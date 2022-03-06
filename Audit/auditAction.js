@@ -5,6 +5,7 @@ let auditAction={
     ADD_ADDRESS:'ADD_ADDRESS',
     ALL_ADDRESSES:'ALL_ADDRESSES',
     DEL_ADDRESS:'DEL_ADDRESS',
+    AUTHENTICATION:'AUTHENTICATION'
 }
 
 module.exports={auditAction};

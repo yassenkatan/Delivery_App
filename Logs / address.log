@@ -65,3 +65,15 @@
 3/6/2022, 3:20:54 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
 3/6/2022, 3:34:25 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
 3/6/2022, 3:35:03 AM | INFO | All Addresses :  | data "Get All Addresses for yas@gmail.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 9:16:26 AM | ERROR | Add Address :  | data "{ name: 'work',\n  city: 'mazz',\n  street: 'jasjj',\n  locationDetails: 'ksklakfalsfaskfjasknfmasnf,anskfnk,nsa,fas',\n  User: [ new ObjectId(\"62232cf069cb7fcddc57d9fa\") ],\n  CreatedAt: 2022-03-06T07:16:26.000Z,\n  _id: new ObjectId(\"62245fca232d93c10445ebb7\") } New Added | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 9:16:26 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 9:18:06 AM | ERROR | Add Address :  | data "{ name: 'home',\n  city: 'mazzeh',\n  street: 'hghghghghghg',\n  locationDetails: 'yfrtyftudfurtdyrdrdyrtdytrdyrdrytdrtdrdre',\n  User: [ new ObjectId(\"62232cf069cb7fcddc57d9fa\") ],\n  CreatedAt: 2022-03-06T07:18:06.000Z,\n  _id: new ObjectId(\"6224602e232d93c10445ebc7\") } New Added | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 9:18:06 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 9:18:39 AM | INFO | Delete Address :  | data "admin@admin.com Delete Address  | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 9:18:39 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 9:18:41 AM | INFO | Delete Address :  | data "admin@admin.com Delete Address  | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 9:18:42 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 10:24:57 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 10:25:27 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 10:29:07 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 
+3/6/2022, 10:29:11 AM | INFO | All Addresses :  | data "Get All Addresses for admin@admin.com | IP : ::ffff:127.0.0.1" | 

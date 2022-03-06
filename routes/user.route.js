@@ -11,7 +11,7 @@ let storage=multer.diskStorage({
         cb(null,'Media/Users')
     },
     filename:(req,file,cb)=>{
-        cb(null,file.fieldname+ '-' +DateNow.toDateString())
+        cb(null,DateNow.toDateString()+ '-' +file.originalname)
     }
 });
 let upload=multer({storage:storage});

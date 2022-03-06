@@ -11,8 +11,8 @@ const Address_Router=require('./routes/address.route');
 dotenv.config();
 const port=process.env.HOST_PORT;
 const app=express();
+app.listen(port,()=>{console.log('The Server is listening on URL: http://localhost:'+port)});
 app.use(express.json());
-app.listen(port,()=>{console.log(`The Server is listening on URL: http://localhost:${port}`)});
 app.use(cookies());
 
 //DB Config

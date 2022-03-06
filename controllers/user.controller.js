@@ -13,33 +13,32 @@ const logger=new Logger('user');
 const signup=async (req,res)=>{
     try {
 
-        let user=await new User({
-            fullname:req.body.fullname,
-            email:req.body.email,
-            password:req.body.password,
-            passwordConfirm:req.body.passwordConfirm
-        });
-        
-        //Check if User exist
-        let userExist=await User.find({email:user.email});
-        if(userExist!=null){
+            let fullname=req.body.fullname;
+            let email=req.body.email;
+            let password=req.body.password;
+            let passwordConfirm=req.body.passwordConfirm;
+            //Encrypt Password
+            let passwordEncrypted=await bcrypt.hash(password,10);
+            let passwordConfirmEncrypted=await bcrypt.hash(passwordConfirm,10);
+
+            //Check if User exist
+            let userExist=await User.find({email:email});
+            let userExist_email=[];
+            userExist.forEach(email=>{
+                userExist_email=email.email;
+            });
+        if(userExist_email==email){
             logger.error('Signup : ',`User is exist | IP : ${req.socket.remoteAddress}`);
             alert('User Exist , Please Login ..')
             res.render('loginPage',{title:'Login'});
         }
         else{
             //Check password is same confirm password
-            if(user.password==user.passwordConfirm){
-
-                //Encrypt Password
-                const salt= bcrypt.getSalt(10,function(){})
-                let passwordEncrypted=await bcrypt.hash(user.password,salt);
-                let passwordConfirmEncrypted=await bcrypt.hash(user.passwordConfirm,salt);
-
+            if(password===passwordConfirm){
                 //New User
                 let new_user=await new User({
-                    fullname:user.fullname,
-                    email:user.email.toLowerCase(),
+                    fullname:fullname,
+                    email:email.toLowerCase(),
                     password:passwordEncrypted,
                     passwordConfirm:passwordConfirmEncrypted,
                     CreatedAt:util.DateNow()
@@ -50,7 +49,7 @@ const signup=async (req,res)=>{
                 new_user.save();
                 Audit_Controller.prepareAudit(Audit_Action.auditAction.SIGNUP,fullname,200,null,email,req.socket.remoteAddress,util.DateNow());
                 logger.info('Signup : ',`${email} New User | IP: ${req.socket.remoteAddress}`)
-                alert(`Welcome ${user.fullname}, Please Login ...`)
+                alert(`Welcome ${fullname}, Please Login ...`)
                 res.status(200).render('loginPage',{title:'Login'})
             }
             else if(password!=passwordConfirm){
